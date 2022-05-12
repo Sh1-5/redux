@@ -3,8 +3,8 @@ import store from './store/index.js'
 import {
   increment,
   decrement,
-  addAction,
-  subAction
+  addNumber,
+  subNumber
 } from './store/actionCreators.js'
 
 store.subscribe(() => {
@@ -13,5 +13,5 @@ store.subscribe(() => {
 
 store.dispatch(increment())
 store.dispatch(decrement())
-store.dispatch(addAction(15))
-store.dispatch(subAction(15))
+store.dispatch(addNumber(15))
+store.dispatch(subNumber(15))

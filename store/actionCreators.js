@@ -12,14 +12,14 @@ export const decrement = () => {
   }
 }
 
-export const addAction = (num) => {
+export const addNumber = (num) => {
   return {
     type: ADD_NUMBER,
     num
   }
 }
 
-export const subAction = (num) => {
+export const subNumber = (num) => {
   return {
     type: SUB_NUMBER,
     num
