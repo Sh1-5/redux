@@ -1,4 +1,4 @@
-const redux = require('redux')
+import { legacy_createStore as createStore } from 'redux'
 
 const initialState = {
   counter: 0
@@ -21,8 +21,8 @@ function reducer(state = initialState, action) {
   }
 }
 
-// store
-const store = redux.createStore(reducer)
+// store（创建的时候需要传入一个reducer）
+const store = createStore(reducer)
 
 // actions
 const action1 = { type: 'INCREMENT' }
